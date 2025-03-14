@@ -9,8 +9,7 @@
         text-align: center;
         /* 120px - 300px top */
         /* 60px - 150px  bottom */
-        padding: clamp(7.5rem, 23.82vw, 18.75rem) calc(16 / 16 * 1rem)
-            clamp(3.75rem, 14.82vw, 9.375rem);
+        padding: clamp(7.5rem, 23.82vw, 14.25rem) 1rem clamp(3.75rem, 14.82vw, 5.75rem);
         position: relative;
         z-index: 1;
 
@@ -204,6 +203,8 @@
             margin: 0;
             color: #cdcdcd;
             display: block;
+            max-width: 6rem;
+            text-align: center;
         }
 
         .cs-number {

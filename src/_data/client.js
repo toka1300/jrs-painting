@@ -14,7 +14,8 @@ module.exports = {
     // },
     "socials": {
         "facebook": "https://www.facebook.com/JRsPaintingservices.ca/",
-        "yelp": "https://www.jrspaintingservices.ca/",
+        "yelp": "https://www.yelp.com/biz/jrs-painting-services-pembroke",
+        "google": "https://www.google.ca" //TODO
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
     "domain": "https://www.jrspaintingservices.ca"

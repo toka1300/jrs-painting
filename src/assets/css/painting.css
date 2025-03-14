@@ -1,0 +1,178 @@
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #RTsbs-601,
+  #RTsbsr-601,
+  #RTsbst-601 {
+    position: relative;
+  }
+  #RTsbs-601 .cs-container,
+  #RTsbsr-601 .cs-container,
+  #RTsbst-601 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #RTsbs-601 .cs-content,
+  #RTsbsr-601 .cs-content,
+  #RTsbst-601 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 32.625rem;
+    /* moved section padding to cs-content so the cs-background can be full width */
+    padding: var(--sectionPadding);
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #RTsbs-601 .cs-text,
+  #RTsbsr-601 .cs-text,
+  #RTsbst-601 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #RTsbs-601 .cs-text:last-of-type,
+  #RTsbsr-601 .cs-text:last-of-type,
+  #RTsbst-601 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #RTsbs-601 .cs-button-solid,
+  #RTsbsr-601 .cs-button-solid,
+  #RTsbst-601 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #RTsbs-601 .cs-button-solid:before,
+  #RTsbsr-601 .cs-button-solid:before,
+  #RTsbst-601 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #RTsbs-601 .cs-button-solid:hover:before,
+  #RTsbsr-601 .cs-button-solid:hover:before,
+  #RTsbst-601 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #RTsbs-601 .cs-background,
+  #RTsbsr-601 .cs-background,
+  #RTsbst-601 .cs-background {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 16rem;
+    z-index: 1;
+  }
+  #RTsbs-601 .cs-background img,
+  #RTsbsr-601 .cs-background img,
+  #RTsbst-601 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #RTsbs-601,
+  #RTsbsr-601,
+  #RTsbst-601 {
+    /* 90px - 150px */
+    /* returned section padding to the section container, this Stitch has 1.5X padding top and bottom than the normal Stitch */
+    padding: clamp(5.625rem, 9vw, 9.375rem) 1rem;
+  }
+  #RTsbs-601 .cs-container,
+  #RTsbsr-601 .cs-container,
+  #RTsbst-601 .cs-container {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  #RTsbs-601 .cs-background,
+  #RTsbsr-601 .cs-background,
+  #RTsbst-601 .cs-background {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+  }
+  #RTsbs-601 .cs-content,
+  #RTsbsr-601 .cs-content,
+  #RTsbst-601 .cs-content {
+    width: 45%;
+    padding: 0;
+  }
+}
+/*-- -------------------------- -->
+<---   Side By Side Reverse     -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #RTsbsr-601 {
+    background-color: var(--primary);
+  }
+  #RTsbsr-601 .cs-topper,
+  #RTsbsr-601 .cs-title,
+  #RTsbsr-601 .cs-text {
+    color: var(--bodyTextColorWhite);
+  }
+  #RTsbsr-601 .cs-text {
+    opacity: 0.8;
+  }
+  #RTsbsr-601 .cs-button-solid {
+    background-color: #fff;
+    color: var(--headerColor);
+    transition: color 0.3s;
+  }
+  #RTsbsr-601 .cs-button-solid:hover {
+    color: #fff;
+  }
+}
+/* Mobile - 768px */
+@media only screen and (min-width: 48rem) {
+  #RTsbsr-601 .cs-container {
+    justify-content: flex-start;
+  }
+  #RTsbsr-601 .cs-background {
+    left: 50%;
+    right: auto;
+  }
+}
+
+/*# sourceMappingURL=painting.css.map */

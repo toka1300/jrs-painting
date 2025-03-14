@@ -1,5 +1,3 @@
-<!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -12,7 +10,7 @@
         <link rel="canonical" href="{{ client.domain }}{{ page.url }}">
 
         <!--Social Media Display-->
-        <meta property="og:title" content="{{ title }}"/>
+        <meta property="og:title" content="{{ title }} | {{ client.name }}"/>
         <meta property="og:description" content="{{ description }}"/>
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="{{ client.domain }}{{ page.url }}"/>
@@ -28,7 +26,7 @@
         <meta name="theme-color" content="#ffffff">
 
         <!-- Preloads -->
-        <link rel="preload" as="image" href="/assets/svgs/logo-white.svg">
+        <link rel="preload" as="image" href="/assets/svgs/logo.svg">
 
         <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
         {% if preloadImg != '' %}
@@ -36,14 +34,14 @@
         {% endif %}
 
         <!-- Sitewide Stylesheets and Scripts -->
+        <link rel="stylesheet" href="/assets/css/critical.css"
+            media="print" onload="this.media='all'; this.onload=null;">
         <link rel="stylesheet" href="/assets/css/root.css">
-        <link rel="stylesheet" href="/assets/css/dark.css">
-        <script defer src="/assets/js/dark.js"></script>
         <script defer src="/assets/js/nav.js"></script>
 
         {% block head %}{% endblock %}
 
-        <title>{{ title }}</title>
+        <title>{{ title }} | {{ client.name }}</title>
     </head>
     <body>
         <!--Screen reader skip main nav-->
@@ -51,6 +49,9 @@
 
         {% include "components/header.html" %}
         <main id="main">
+            {% if title != 'Home' %}
+                {% include 'components/banner.html' %}
+            {% endif %}
             {% block body %}{% endblock %}
         </main>
         {% include "components/footer.html" %}

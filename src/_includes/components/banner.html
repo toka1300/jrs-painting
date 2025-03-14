@@ -1,0 +1,22 @@
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1400">
+    <div class="cs-container">
+        <span class="cs-int-title">{{ title }}</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl bannerImage | resize({ width: 1200, height: 946 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl bannerImage | resize({ width: 1200, height: 946 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl bannerImage | resize({ width: 1200, height: 946 }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 601px)" srcset="{% getUrl bannerImage | resize({ width: 2000, height: 946 }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl bannerImage | resize({ width: 2000, height: 946 }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl bannerImage | resize({ width: 2000, height: 946 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl bannerImage | resize({ width: 2000, height: 946 }) | jpeg %}" alt="Painter working on a house wearing a tool belt" width="1200" height="946" loading="lazy" decoding="async" aria-hidden="true">
+    </picture>
+</div>
+                                

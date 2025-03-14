@@ -1,7 +1,8 @@
 ---
-title: 'About | Code Stitch Web Designs'
-description: 'Meta description for the page'
+title: 'About Us'
+description: "Meet JR's Painting and Home Renovation in Pembroke. 25 years of experience delivering expert painting and renovation services throughout the Ottawa Valley."
 permalink: 'about/'
+bannerImage: '/assets/images/banner-about.jpg'
 eleventyNavigation:
     key: About Us
     order: 200
@@ -10,11 +11,312 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
 {% endblock %}
 
 {% block body %}
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="RTsbs-601">
+    <picture class="cs-background">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kitchen.jpg" | resize({ width: 1200, height: 512 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kitchen.jpg" | resize({ width: 1200, height: 512 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kitchen.jpg" | resize({ width: 1200, height: 512 }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kitchen.jpg" | resize({ width: 1920, height: 1170 }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kitchen.jpg" | resize({ width: 1920, height: 1170 }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kitchen.jpg" | resize({ width: 1920, height: 1170 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/kitchen.jpg" | resize({ width: 1920, height: 1170 }) | jpeg %}" alt="Beautiful kitchen with nice paint work" width="1920" height="1170" loading="eager" decoding="async" aria-hidden="true">
+    </picture>
+
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Who We Are</span>
+            <h2 class="cs-title">Your Local Pembroke & Ottawa Valley Renovation Expert </h2>
+            <p class="cs-text">
+                At JR's Painting and Home Renovation, we combine decades of expertise with a passionate commitment to quality, delivering exceptional home improvement services to Pembroke and the Ottawa Valley.
+            </p>
+            <p class="cs-text">
+                With 25 years of experience in painting, construction and renovation, we deliver exceptional results through personalized service, clean worksites, and transparent pricing.
+            </p>
+            <a href="/contact" class="cs-button-solid">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-97">
+    <div class="cs-container">
+        <picture class="cs-picture">
+           <!--Mobile Image-->
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/john.jpg" | resize({ width: 1100, height: 1408 }) | avif %}" type="image/avif">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/john.jpg" | resize({ width: 1100, height: 1408 }) | webp %}" type="image/webp">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/john.jpg" | resize({ width: 1100, height: 1408 }) | jpeg %}" type="image/jpeg">
+           <!--Desktop Image-->
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/john.jpg" | resize({ width: 1044, height: 1480 }) | avif %}" type="image/avif">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/john.jpg" | resize({ width: 1044, height: 1480 }) | webp %}" type="image/webp">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/john.jpg" | resize({ width: 1044, height: 1480 }) | jpeg %}" type="image/jpeg">
+           <img src="{% getUrl "/assets/images/john.jpg" | resize({ width: 1044, height: 1480 }) | jpeg %}" alt="John sitting beside his supplies" width="1100" height="1408" loading="lazy" decoding="async" aria-hidden="true">
+        </picture>
+
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">Meet John</span>
+            <h2 class="cs-title">Driven By Craftsmanship & Care</h2>
+            <p class="cs-text">
+                Beginning his journey in construction at age 15, John Rose quickly distinguished himself through dedication and natural talent, advancing to lead hand for a prominent general contracting company. With 25 years of carpentry experience, 15 years in professional painting, and specialized expertise in flooring installation, John's comprehensive background ensures superior craftsmanship in every project.
+            </p>
+            <p class="cs-text">
+                In 2019, driven by a vision for higher quality standards in the industry, John established JR's Painting and Home Renovation. What began as a part-time venture grew into a thriving full-time business by 2023, built on a foundation of exceptional workmanship and unwavering attention to detail.
+            </p>
+            <p class="cs-text">
+                Today, John's passion for transforming spaces through expert painting and renovation continues to drive the company's success, creating lasting relationships within the Pembroke community through reliable service and personalized care.
+            </p>
+
+            <a class="cs-button-solid" aria-label="learn more about our programs" href="/contact">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================ -->
+<!--                   Stats                      -->
+<!-- ============================================ -->
+
+<section id="stats-209">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Why Work with Us</span>
+            <h2 class="cs-title">A Wealth of Experience</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <span class="cs-number">25+</span>
+                <span class="cs-header">Years Experience</span>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">15</span>
+                <span class="cs-header">Years of Professional Painting</span>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">5+</span>
+                <span class="cs-header">Years of Flooring Specialization</span>
+            </li>
+        </ul>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/brick-room.jpg" | resize({ width: 1200, height: 1000 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/brick-room.jpg" | resize({ width: 1200, height: 1000 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/brick-room.jpg" | resize({ width: 1200, height: 1000 }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/brick-room.jpg" | resize({ width: 2000, height: 1000 }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/brick-room.jpg" | resize({ width: 2000, height: 1000 }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/brick-room.jpg" | resize({ width: 2000, height: 1000 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/brick-room.jpg" | resize({ width: 2000, height: 1000 }) | jpeg %}" alt="Brick wall" width="1200" height="1000" loading="lazy" decoding="async" aria-hidden="true">
+    </picture>
+</section>
+                                
+<!-- ============================================ -->
+<!--              Side By Side Reverse            -->
+<!-- ============================================ -->
+
+<section id="RTsbsr-601">
+    <picture class="cs-background">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/happy-couple-interior.jpg" | resize({ width: 1200, height: 1000 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/happy-couple-interior.jpg" | resize({ width: 1200, height: 1000 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/happy-couple-interior.jpg" | resize({ width: 1200, height: 1000 }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/happy-couple-interior.jpg" | resize({ width: 1400, height: 1480 }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/happy-couple-interior.jpg" | resize({ width: 1400, height: 1480 }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/happy-couple-interior.jpg" | resize({ width: 1400, height: 1480 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/happy-couple-interior.jpg" | resize({ width: 1400 , height: 1480 }) | jpeg %}" alt="Brick wall" width="1200" height="1000" loading="lazy" decoding="async" aria-hidden="true">
+    </picture>
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Commitment</span>
+            <h2 class="cs-title">Transforming Homes, Exceeding Expectations</h2>
+            <p class="cs-text">
+                We're dedicated to enhancing the beauty, value, and comfort of every home through exceptional craftsmanship and personalized service. Our customer-first approach combines technical expertise with genuine care, ensuring results that truly transform your space.
+            </p>
+            <a href="/contact" class="cs-button-solid">Contact Us</a>
+        </div>
+    </div>
+</section>
+           
+<!-- ============================================ -->
+<!--              Side By Side Triplet            -->
+<!-- ============================================ -->
+
+<section id="RTsbst-601">
+    <picture class="cs-background">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pembroke.jpeg" | resize({ width: 1200, height: 1000 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pembroke.jpeg" | resize({ width: 1200, height: 1000 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pembroke.jpeg" | resize({ width: 1200, height: 1000 }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/pembroke.jpeg" | resize({ width: 1400, height: 1480 }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/pembroke.jpeg" | resize({ width: 1400, height: 1480 }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/pembroke.jpeg" | resize({ width: 1400, height: 1480 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/pembroke.jpeg" | resize({ width: 1400 , height: 1480 }) | jpeg %}" alt="Brick wall" width="1200" height="1000" loading="lazy" decoding="async" aria-hidden="true">
+
+    </picture>
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Where We Work</span>
+            <h2 class="cs-title">Serving Pembroke & The Ottawa Valley </h2>
+            <p class="cs-text">
+                We provide professional painting and renovation services throughout Pembroke and surrounding communities, bringing expert craftsmanship to every corner of the Ottawa Valley.
+            </p>
+            <a href="" class="cs-button-solid">Contact Us</a>
+            <p class="image-credit">
+                *Image by <a href="https://commons.wikimedia.org/wiki/File:Pembroke_April2006.JPG">P199</a>, licensed under 
+                <a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>, via Wikimedia Commons.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-45">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Gallery</span>
+            <h2 class="cs-title">Some Samples of Our Work</h2>
+            <p class="cs-text">
+                Browse through our gallery of completed projects showcasing the quality and attention to detail that defines JR's Painting and Home Renovation.
+            </p>
+        </div>
+        <ul class="cs-image-group">
+            <!-- Image 1 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/dining-room.jpg" | resize({ width: 1130, height: 1130 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/dining-room.jpg" | resize({ width: 1130, height: 1130 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/dining-room.jpg" | resize({ width: 1130, height: 1130 }) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image-->
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/dining-room.jpg" | resize({ width: 610, height: 610 }) | avif %}" type="image/avif">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/dining-room.jpg" | resize({ width: 610, height: 610 }) | webp %}" type="image/webp">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/dining-room.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/dining-room.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" alt="610" width="610" height="" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            <!-- Image 2 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kitchen.jpg" | resize({ width: 1130, height: 1130 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kitchen.jpg" | resize({ width: 1130, height: 1130 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kitchen.jpg" | resize({ width: 1130, height: 1130 }) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image-->
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kitchen.jpg" | resize({ width: 610, height: 610 }) | avif %}" type="image/avif">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kitchen.jpg" | resize({ width: 610, height: 610 }) | webp %}" type="image/webp">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kitchen.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/kitchen.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" alt="610" width="610" height="" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            <!-- Image 3 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bedroom.jpg" | resize({ width: 1130, height: 1130 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bedroom.jpg" | resize({ width: 1130, height: 1130 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bedroom.jpg" | resize({ width: 1130, height: 1130 }) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image-->
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/bedroom.jpg" | resize({ width: 610, height: 610 }) | avif %}" type="image/avif">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/bedroom.jpg" | resize({ width: 610, height: 610 }) | webp %}" type="image/webp">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/bedroom.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/bedroom.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" alt="610" width="610" height="" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            <!-- Image 4 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cottage.png" | resize({ width: 1130, height: 1130 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cottage.png" | resize({ width: 1130, height: 1130 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cottage.png" | resize({ width: 1130, height: 1130 }) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image-->
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/cottage.png" | resize({ width: 610, height: 610 }) | avif %}" type="image/avif">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/cottage.png" | resize({ width: 610, height: 610 }) | webp %}" type="image/webp">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/cottage.png" | resize({ width: 610, height: 610 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/cottage.png" | resize({ width: 610, height: 610 }) | jpeg %}" alt="610" width="610" height="" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            <!-- Image 5 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/stairs-realtor.jpg" | resize({ width: 1130, height: 1130 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/stairs-realtor.jpg" | resize({ width: 1130, height: 1130 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/stairs-realtor.jpg" | resize({ width: 1130, height: 1130 }) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image-->
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/stairs-realtor.jpg" | resize({ width: 610, height: 610 }) | avif %}" type="image/avif">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/stairs-realtor.jpg" | resize({ width: 610, height: 610 }) | webp %}" type="image/webp">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/stairs-realtor.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/stairs-realtor.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" alt="610" width="610" height="" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            <!-- Image 6 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/shiny-flooring.png" | resize({ width: 1130, height: 1130 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/shiny-flooring.png" | resize({ width: 1130, height: 1130 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/shiny-flooring.png" | resize({ width: 1130, height: 1130 }) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image-->
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/shiny-flooring.png" | resize({ width: 610, height: 610 }) | avif %}" type="image/avif">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/shiny-flooring.png" | resize({ width: 610, height: 610 }) | webp %}" type="image/webp">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/shiny-flooring.png" | resize({ width: 610, height: 610 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/shiny-flooring.png" | resize({ width: 610, height: 610 }) | jpeg %}" alt="610" width="610" height="" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            <!-- Image 8 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hallway.png" | resize({ width: 1130, height: 1130 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hallway.png" | resize({ width: 1130, height: 1130 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hallway.png" | resize({ width: 1130, height: 1130 }) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image-->
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hallway.png" | resize({ width: 610, height: 610 }) | avif %}" type="image/avif">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hallway.png" | resize({ width: 610, height: 610 }) | webp %}" type="image/webp">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hallway.png" | resize({ width: 610, height: 610 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/hallway.png" | resize({ width: 610, height: 610 }) | jpeg %}" alt="610" width="610" height="" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            <!-- Image 8 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 1130, height: 1130 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 1130, height: 1130 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 1130, height: 1130 }) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image-->
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 610, height: 610 }) | avif %}" type="image/avif">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 610, height: 610 }) | webp %}" type="image/webp">
+                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" alt="610" width="610" height="" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            
+        </ul>
+    </div>
+</section>
+                                
+                                
     
-
     {% include 'components/cta.html' %}
-
 {% endblock %}

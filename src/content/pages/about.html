@@ -55,14 +55,14 @@ eleventyNavigation:
     <div class="cs-container">
         <picture class="cs-picture">
            <!--Mobile Image-->
-           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/john.jpg" | resize({ width: 1100, height: 1408 }) | avif %}" type="image/avif">
-           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/john.jpg" | resize({ width: 1100, height: 1408 }) | webp %}" type="image/webp">
-           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/john.jpg" | resize({ width: 1100, height: 1408 }) | jpeg %}" type="image/jpeg">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/John.jpg" | resize({ width: 1100, height: 1408 }) | avif %}" type="image/avif">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/John.jpg" | resize({ width: 1100, height: 1408 }) | webp %}" type="image/webp">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/John.jpg" | resize({ width: 1100, height: 1408 }) | jpeg %}" type="image/jpeg">
            <!--Desktop Image-->
-           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/john.jpg" | resize({ width: 1044, height: 1480 }) | avif %}" type="image/avif">
-           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/john.jpg" | resize({ width: 1044, height: 1480 }) | webp %}" type="image/webp">
-           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/john.jpg" | resize({ width: 1044, height: 1480 }) | jpeg %}" type="image/jpeg">
-           <img src="{% getUrl "/assets/images/john.jpg" | resize({ width: 1044, height: 1480 }) | jpeg %}" alt="John sitting beside his supplies" width="1100" height="1408" loading="lazy" decoding="async" aria-hidden="true">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/John.jpg" | resize({ width: 1044, height: 1480 }) | avif %}" type="image/avif">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/John.jpg" | resize({ width: 1044, height: 1480 }) | webp %}" type="image/webp">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/John.jpg" | resize({ width: 1044, height: 1480 }) | jpeg %}" type="image/jpeg">
+           <img src="{% getUrl "/assets/images/John.jpg" | resize({ width: 1044, height: 1480 }) | jpeg %}" alt="John sitting beside his supplies" width="1100" height="1408" loading="lazy" decoding="async" aria-hidden="true">
         </picture>
 
         <!-- Right Content Section-->
@@ -176,7 +176,7 @@ eleventyNavigation:
             <p class="cs-text">
                 We provide professional painting and renovation services throughout Pembroke and surrounding communities, bringing expert craftsmanship to every corner of the Ottawa Valley.
             </p>
-            <a href="" class="cs-button-solid">Contact Us</a>
+            <a href="/contact" class="cs-button-solid">Contact Us</a>
             <p class="image-credit">
                 *Image by <a href="https://commons.wikimedia.org/wiki/File:Pembroke_April2006.JPG">P199</a>, licensed under 
                 <a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>, via Wikimedia Commons.

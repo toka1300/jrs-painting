@@ -683,7 +683,7 @@ html {
     filter: grayscale(1) brightness(1000%);
   }
   #cs-navigation .cs-social-icon {
-    width: 0.75rem;
+    width: 1.25rem;
     height: auto;
     opacity: 0.6;
     display: block;

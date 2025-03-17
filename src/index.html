@@ -92,27 +92,27 @@ eleventyNavigation:
             </div>
             <ul class="cs-stats-group">
                 <li class="cs-item">
-                    <span class="cs-desc">Years of Experience</span>
                     <span class="cs-number">25</span>
+                    <span class="cs-desc">Years of Experience</span>
                 </li>
                 <li class="cs-item">
-                    <span class="cs-desc">Satisfaction</span>
                     <span class="cs-number">100%</span>
+                    <span class="cs-desc">Satisfaction</span>
                 </li>
                 <li class="cs-item">
-                    <span class="cs-desc">Projects</span>
                     <span class="cs-number">100's</span>
+                    <span class="cs-desc">of Projects</span>
                 </li>
             </ul>
         </div>
     </div>
     <picture class="cs-picture">
        <!--Mobile Image-->
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 656, height: 800, focus: "left" }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/dining-room.jpg" | resize({ width: 656, height: 800, focus: "left" }) | avif %}" type="image/avif">
        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 656, height: 800 }) | webp %}" type="image/webp">
        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 656, height: 800 }) | jpeg %}" type="image/jpeg">
        <!--Desktop Image-->
-       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 1724, height: 1600 }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/dining-room.jpg" | resize({ width: 1724, height: 1600 }) | avif %}" type="image/avif">
        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 1724, height: 1600 }) | webp %}" type="image/webp">
        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 1724, height: 1600 }) | jpeg %}" type="image/jpeg">
        <img src="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 1724, height: 1600 }) | jpeg %}" alt="Beautifully painted living room with furniture" width="656" height="800" loading="eager" decoding="async" aria-hidden="true">

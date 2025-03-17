@@ -1,6 +1,6 @@
 ---
-title: 'Contact | Code Stitch Web Designs'
-description: 'Meta description for the page'
+title: 'Contact'
+description: "Contact JR's Painting for professional painting and renovation services in Pembroke. Get your free quote today at (613) 401-9196. Serving the Ottawa Valley."
 permalink: 'contact/'
 bannerImage: '/assets/images/banner-contact.png'
 eleventyNavigation:
@@ -12,9 +12,85 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
+    <link rel="stylesheet" href="/assets/css/contact.css">
 {% endblock %}
 
 {% block body %}
 
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
 
+<section id="contact-1601">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Get In Touch</h2>
+            <p class="cs-text">
+                Send us a message if you have any question or if you would like a free, no-obligation quote.
+            </p>
+            <!--Form-->
+            <form class="cs-form" id="cs-form-1601" name="Contact Form" method="post">
+                <label class="cs-label">
+                    Name
+                    <input class="cs-input" required type="text" id="name-1601" name="name" placeholder="Name">
+                </label>
+                <label class="cs-label cs-email">
+                    Email
+                    <input class="cs-input" required type="email" id="email-1601" name="email" placeholder="Email">
+                </label>
+                <label class="cs-label cs-phone">
+                    Phone
+                    <input class="cs-input" required type="phone" id="phone-1601" name="phone" placeholder="Phone">
+                </label>
+                <label class="cs-label">
+                    Message
+                    <textarea class="cs-input cs-textarea" required name="Message" id="message-1601" placeholder="If you would like a quote, please provide as many details about your project as possible!"></textarea>
+                </label>
+                <button class="cs-button-solid cs-submit" type="submit">Send</button>
+            </form>
+        </div>
+        <div class="cs-wrapper">
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-header">Phone Us</span>
+                    <p class="cs-item-text">
+                        We are available Mon - Fri: 8am - 5pm<br>
+                        <a class="cs-link" href="tel:{{ client.phoneForTel }}"><img class="cs-icon" src="../../assets/svgs/phone-fill.svg" alt="icon" loading="lazy" decoding="async" width="16" height="16" aria-hidden="true">{{ client.phoneFormatted }}</a>                    
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-header"><span class="cs-header"></span>Email Us</span>
+                    <p class="cs-item-text">
+                        Email your questions to
+                        <a class="cs-link" href="mailto:{{ client.email }}"><img class="cs-icon" src="../../assets/svgs/mail-fill.svg" alt="icon" loading="lazy" decoding="async" width="16" height="16" aria-hidden="true">{{ client.email }}</a>     
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-header">Reviews</span>
+                    <p class="cs-item-text">
+                        See Our reviews on Google or leave a review
+                        {# TODO add link to business profile #}
+                        <a href="" class="cs-link">
+                            <img class="cs-icon" src="../../assets/svgs/brand-google.svg" alt="icon" loading="lazy" decoding="async" width="16" height="16" aria-hidden="true">
+                            Google Reviews
+                        </a>                   
+                    </p>
+                </li>
+            </ul>
+            <picture class="cs-background">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/contact-2.jpg" | resize({ width: 1044, height: 1014 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/contact-2.jpg" | resize({ width: 1044, height: 1014 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/contact-2.jpg" | resize({ width: 1044, height: 1014 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/contact-2.jpg" | resize({ width: 1044, height: 1532 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/contact-2.jpg" | resize({ width: 1044, height: 1532 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/contact-2.jpg" | resize({ width: 1044, height: 1532 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/contact-2.jpg" | resize({ width: 1044, height: 1532 }) | jpeg %}" alt="Walls painted navy blue in bedroom" width="1044" height="1014" loading="eager" decoding="async" aria-hidden="true">
+            </picture>
+        </div>
+    </div>
+</section>
+    {% include 'components/cta.html' %}
 {% endblock %}

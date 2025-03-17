@@ -20,6 +20,10 @@
         --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     .cs-topper {
         display: block;
         margin-bottom: 0.25rem;
@@ -806,9 +810,14 @@ html {
             transition: background-color 0.3s;
 
             &:hover {
-                background-color: var(--secondary);
-            }
-        }
+                background-color: var(--primary);
+
+                .cs-social-icon {
+                    opacity: 1 ;
+                    filter: grayscale(1) brightness(1000%);
+                    }
+                }
+                }
 
         .cs-social-icon {
             width: calc(12 / 16 * 1rem);
@@ -1159,10 +1168,6 @@ html {
                 height: auto;
                 display: block;
             }
-        }
-
-        .cs-dark {
-            display: none;
         }
     }
 }

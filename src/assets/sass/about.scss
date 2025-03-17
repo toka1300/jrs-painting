@@ -525,7 +525,8 @@
         padding: var(--sectionPadding);
         position: relative;
         /* Prevents overflow from the image going off screen */
-        overflow: hidden;
+        overflow: clip;
+        scroll-margin-top: 6rem;
 
         .cs-container {
             width: 100%;

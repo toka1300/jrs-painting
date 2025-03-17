@@ -12,6 +12,7 @@ eleventyNavigation:
 
 {% block head %}
 <link rel="stylesheet" href="/assets/css/local.css"/>
+<link rel="stylesheet" href="/assets/css/why-choose-us.css"/>
 <noscript>
     <link rel="stylesheet" href="/assets/css/local.css">
 </noscript>
@@ -86,8 +87,8 @@ eleventyNavigation:
                 Welcome to JR's Painting and Renovations, your trusted partner for professional painting and home improvements in Pembroke and the Ottawa Valley.
             </p>
             <div class="cs-button-group">
-                <a href="" class="cs-button-solid">Get An Estimate</a>
-                <a href="" class="cs-button-transparent">See Our Work</a>
+                <a href="/contact" class="cs-button-solid">Get An Estimate</a>
+                <a href="/about#gallery" class="cs-button-transparent">See Our Work</a>
             </div>
             <ul class="cs-stats-group">
                 <li class="cs-item">
@@ -207,7 +208,7 @@ eleventyNavigation:
                 </p>
             </li>
         </ul>
-        <a href="" class="cs-button-solid">Learn More</a>
+        <a href="/about" class="cs-button-solid">Learn More</a>
     </div>
 </section>
 
@@ -267,7 +268,7 @@ eleventyNavigation:
             <p class="cs-text">
                 A collection of our work, we are proud of our work and would like to share it!
             </p>
-            <a href="" class="cs-button-solid">View All</a>
+            <a href="/about#gallery-45" class="cs-button-solid">View All</a>
         </div>
 
         <div class="cs-gallery">
@@ -309,53 +310,6 @@ eleventyNavigation:
     </div>
 </section>
 
-<!-- ============================================ -->
-<!--                 Why Choose                   -->
-<!-- ============================================ -->
-
-<section id="why-choose-506">
-    <div class="cs-container">
-        <div class="cs-content">
-            <div class="cs-flex">
-                <span class="cs-topper">Our Values</span>
-                <h2 class="cs-title">Why Choose JR's Painting & Renovations</h2>
-            </div>
-            <p class="cs-text">
-                As a proud member of the Pembroke community, we take pride in the work we do. We provide the kind of personalized care and attention that only a dedicated local business can offer.
-            </p>
-        </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <img class="cs-icon" src="/assets/svgs/avatar.svg" loading="lazy" decoding="async" alt="icon" width="70" height="70">
-                <h3 class="cs-h3">Personalized Service</h3>
-                <p class="cs-item-text">
-                    Experience home improvements tailored to your vision, with dedicated one-on-one attention from start to finish, ensuring your project receives the care and consideration it deserves.
-                </p>
-            </li>
-            <li class="cs-item">
-                <img class="cs-icon" src="/assets/svgs/happy-dollar.svg" loading="lazy" decoding="async" alt="icon" width="70" height="70">
-                <h3 class="cs-h3">Transparent Pricing</h3>
-                <p class="cs-item-text">
-                    Get detailed, upfront quotes with no hidden fees or surprises, allowing you to make informed decisions about your home improvement investment.
-                </p>
-            </li>
-            <li class="cs-item">
-                <img class="cs-icon" src="/assets/svgs/microscope.svg" loading="lazy" decoding="async" alt="icon" width="70" height="70">
-                <h3 class="cs-h3">Attention to Detail</h3>
-                <p class="cs-item-text">
-                    From thorough preparation to meticulous finishing touches, our commitment to excellence shows in every corner, ensuring lasting quality that stands the test of time.
-                </p>
-            </li>
-            <li class="cs-item">
-                <img class="cs-icon" src="/assets/svgs/clean.svg" loading="lazy" decoding="async" alt="icon" width="70" height="70">
-                <h3 class="cs-h3">Clean and respectful</h3>
-                <p class="cs-item-text">
-                    We respect our customer's home, always keeping the workspace clean and ensuring we treat the space with the respect that it deserves.
-                </p>
-            </li>
-        </ul>
-    </div>
-</section>                               
-
+    {% include 'components/why-choose-us.html' %}
     {% include 'components/cta.html' %}
 {% endblock %}

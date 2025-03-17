@@ -379,7 +379,7 @@
   #gallery-1716 .cs-gallery {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     /* sends it to the top in the 1st position */
     order: -1;
     gap: 0.75rem;
@@ -414,6 +414,9 @@
     max-width: 19rem;
     /* 32px - 64px, ensures theres always a gap at the bottom to space out the content from the bottom of the container and let the colored rectangle shape be a little bigger and take up more space */
     padding-bottom: clamp(2rem, 7vw, 4rem);
+  }
+  #gallery-1716 .cs-gallery {
+    grid-template-columns: repeat(12, 1fr);
   }
   #gallery-1716 .cs-text:last-of-type {
     /* add position relative so the colored rectangle is now absolutely positioned to the cs-text parent. We also only want these styles on the last paragraph tag */

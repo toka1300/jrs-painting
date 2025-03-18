@@ -19,7 +19,7 @@
   }
   #services-222 .cs-content {
     /* set text align to left if content needs to be left aligned */
-    text-align: center;
+    text-align: left;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -49,6 +49,20 @@
   }
   #services-222 .cs-item:hover {
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+  }
+  #services-222 .cs-text {
+    max-width: 31.5rem;
+  }
+  #services-222 .cs-text:before {
+    /* divider line */
+    content: "";
+    width: 7.8125rem;
+    height: 3px;
+    margin-bottom: 1rem;
+    background: var(--primary);
+    opacity: 1;
+    display: block;
+    position: relative;
   }
   #services-222 .cs-picture {
     width: 6.9375rem;
@@ -126,20 +140,33 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+  #services-222 .cs-topper {
+    text-align: right;
+  }
   #services-222 .cs-content {
     text-align: left;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
   #services-222 .cs-flex-group {
     width: 45%;
   }
   #services-222 .cs-title {
     margin: 0;
+    text-align: right;
   }
   #services-222 .cs-text {
-    width: 45%;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #services-222 .cs-text:before {
+    width: 3px;
+    height: 7.8125rem;
+    /* 24px - 28px */
+    margin: 0 clamp(1.5rem, 3vw, 1.75rem);
+    /* prevents flexbox from squishing it */
+    flex: none;
   }
   #services-222 .cs-item {
     width: 45%;

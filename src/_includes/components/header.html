@@ -14,11 +14,11 @@
                 </a>
             </div>
             <div class="cs-top-contact">
-                <a href="" class="cs-top-link">
+                <a href="/" class="cs-top-link"> {# TODO: Add link to Google Business profile #}
                     <img class="cs-link-icon" src="../../assets/svgs/clock.svg" alt="logo" width="16" height="16" aria-hidden="true" decoding="async">
                     Opening Hours: {{ client.hours }}
                 </a>
-                <a href="" class="cs-top-link">
+                <a href="tel:{{client.phoneForTel}}" class="cs-top-link">
                     <img class="cs-link-icon" src="../../assets/svgs/phone.svg" alt="logo" width="16" height="16" aria-hidden="true" decoding="async">
                     {{ client.phoneFormatted }}
                 </a>

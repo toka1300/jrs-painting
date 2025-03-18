@@ -343,7 +343,7 @@
         .cs-container {
             max-width: calc(1280 / 16 * 1rem);
             flex-direction: row;
-            justify-content: flex-start;
+            justify-content: space-around;
             align-items: center;
             /* 60px - 108px */
             gap: clamp(3.75rem, 7.8vw, 6.75rem);
@@ -351,9 +351,9 @@
 
         .cs-picture {
             /* 284px - 522px */
-            width: clamp(17.75rem, 39.3vw, 32.625rem);
+            width: clamp(17.75rem, 39.3vw, 27.625rem);
             /* 492px - 740px */
-            height: clamp(30.75rem, 60.9vw, 46.25rem);
+            height: auto;
             /* prevents flexbox from squishing it */
             flex: none;
             order: 2;

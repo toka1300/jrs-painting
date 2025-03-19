@@ -8,6 +8,8 @@
     #RTsbsr-601,
     #RTsbst-601 {
         position: relative;
+        display: flex;
+        flex-direction: column;
 
         .cs-container {
             width: 100%;
@@ -88,6 +90,7 @@
             width: 100%;
             height: calc(256 / 16 * 1rem);
             z-index: 1;
+            order: 1;
 
             img {
                 position: absolute;

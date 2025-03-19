@@ -396,8 +396,7 @@
 @media only screen and (min-width: 0rem) {
     #banner-1400 {
         padding: var(--sectionPadding);
-        /* 190px - 268px */
-        padding-top: clamp(11.875rem, 25vw, 16.75rem);
+        padding-top: clamp(14.875rem, 25vw, 16.75rem);
         padding-bottom: calc(100 / 16 * 1rem);
         /* clips the line from causing overflow issues for going off screen */
         overflow: hidden;

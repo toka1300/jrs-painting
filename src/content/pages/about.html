@@ -13,6 +13,7 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="preload" as="image" href="{% getUrl '/assets/images/banner-about.jpg' | resize({ width: 1168, height: 674, position: "top" }) | avif %}"/>
 {% endblock %}
 
 {% block body %}
@@ -27,14 +28,14 @@ eleventyNavigation:
     <!--Background Image-->
     <picture class="cs-background">
        <!--Mobile Image-->
-       <source media="(max-width: 600px)" srcset="{% getUrl bannerImage | resize({ width: 1200, height: 672, position: "top" }) | avif %}" type="image/avif">
-       <source media="(max-width: 600px)" srcset="{% getUrl bannerImage | resize({ width: 1200, height: 672 }) | webp %}" type="image/webp">
-       <source media="(max-width: 600px)" srcset="{% getUrl bannerImage | resize({ width: 1200, height: 672 }) | jpeg %}" type="image/jpeg">
+       <source media="(max-width: 600px)" srcset="{% getUrl bannerImage | resize({ width: 1168, height: 674, position: "top" }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl bannerImage | resize({ width: 1168, height: 674, position: "top" }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl bannerImage | resize({ width: 1168, height: 674, position: "top" }) | jpeg %}" type="image/jpeg">
        <!--Desktop Image-->
-       <source media="(min-width: 601px)" srcset="{% getUrl bannerImage | resize({ width: 3000, height: 882 }) | avif %}" type="image/avif">
-       <source media="(min-width: 601px)" srcset="{% getUrl bannerImage | resize({ width: 2000, height: 882 }) | webp %}" type="image/webp">
-       <source media="(min-width: 601px)" srcset="{% getUrl bannerImage | resize({ width: 2000, height: 882 }) | jpeg %}" type="image/jpeg">
-       <img src="{% getUrl bannerImage | resize({ width: 2000, height: 882 }) | jpeg %}" alt="{{ bannerAlt }}" width="1200" height="946" loading="lazy" decoding="async" aria-hidden="true">
+       <source media="(min-width: 601px)" srcset="{% getUrl bannerImage | resize({ width: 3000, height: 882, position: "attention" }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl bannerImage | resize({ width: 2000, height: 882, position: "attention" }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl bannerImage | resize({ width: 2000, height: 882, position: "attention" }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl bannerImage | resize({ width: 1168, height: 674  }) | jpeg %}" alt="{{ bannerAlt }}" width="1164" height="674" loading="lazy" decoding="async" aria-hidden="true">
     </picture>
 </div>
                                 

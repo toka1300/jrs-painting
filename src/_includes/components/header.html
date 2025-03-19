@@ -6,11 +6,11 @@
     <div class="cs-top-bar">
         <div class="cs-top-container">
             <div class="cs-top-social">
-                <a href="{{ client.socials.facebook }}" target="_blank" class="cs-social-link">
-                    <img class="cs-social-icon" src="../../assets/svgs/brand-facebook.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                <a href="{{ client.socials.facebook }}" target="_blank" class="cs-social-link" aria-label="Go to JR's Painting Facebook Page">
+                    <img class="cs-social-icon" src="../../assets/svgs/brand-facebook.svg" alt="Facebook logo" width="12" height="12" aria-hidden="true" decoding="async">
                 </a>
-                <a href="{{ client.socials.yelp }}" target="_blank" class="cs-social-link">
-                    <img class="cs-social-icon" src="../../assets/svgs/brand-yelp.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                <a href="{{ client.socials.yelp }}" target="_blank" aria-label="Go to JR's Painting Yelp page" class="cs-social-link">
+                    <img class="cs-social-icon" src="../../assets/svgs/brand-yelp.svg" alt="Yelp logo" width="12" height="12" aria-hidden="true" decoding="async">
                 </a>
             </div>
             <div class="cs-top-contact">
@@ -19,7 +19,7 @@
                     Hours: {{ client.hours }}
                 </a>
                 <a href="tel:{{client.phoneForTel}}" class="cs-top-link">
-                    <img class="cs-link-icon" src="../../assets/svgs/phone.svg" alt="logo" width="16" height="16" aria-hidden="true" decoding="async">
+                    <img class="cs-link-icon" src="../../assets/svgs/phone.svg" alt="JR's Painting & Renos logo" width="16" height="16" aria-hidden="true" decoding="async">
                     {{ client.phoneFormatted }}
                 </a>
             </div>

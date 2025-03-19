@@ -10,8 +10,8 @@
     <picture class="cs-background">
        <!--Mobile Image-->
        <source media="(max-width: 600px)" srcset="{% getUrl bannerImage | resize({ width: 1200, height: 672, position: "top" }) | avif %}" type="image/avif">
-       <source media="(max-width: 600px)" srcset="{% getUrl bannerImage | resize({ width: 1200, height: 672 }) | webp %}" type="image/webp">
-       <source media="(max-width: 600px)" srcset="{% getUrl bannerImage | resize({ width: 1200, height: 672 }) | jpeg %}" type="image/jpeg">
+       <source media="(max-width: 600px)" srcset="{% getUrl bannerImage | resize({ width: 1200, height: 672, position: "top" }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl bannerImage | resize({ width: 1200, height: 672, position: "top" }) | jpeg %}" type="image/jpeg">
        <!--Desktop Image-->
        <source media="(min-width: 601px)" srcset="{% getUrl bannerImage | resize({ width: 3000, height: 882 }) | avif %}" type="image/avif">
        <source media="(min-width: 601px)" srcset="{% getUrl bannerImage | resize({ width: 2000, height: 882 }) | webp %}" type="image/webp">

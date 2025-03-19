@@ -15,6 +15,7 @@ eleventyNavigation:
 {% block head %}
     <link rel="stylesheet" href="/assets/css/painting.css">
     <link rel="stylesheet" href="/assets/css/why-choose-us.css"/>
+    <link rel="preload" as="image" href="{% getUrl '/assets/images/banner-flooring.jpg' | resize({ width: 1200, height: 672, position: "top" }) | avif %}"/>
 {% endblock %}
 
 {% block body %}

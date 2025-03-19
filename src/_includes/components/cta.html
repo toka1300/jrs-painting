@@ -21,15 +21,20 @@
        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/happy-couple-exterior.png" | resize({ width: 2000, height: 1028 }) | jpeg %}" type="image/jpeg">
        <img src="{% getUrl "/assets/images/happy-couple-exterior.png" | resize({ width: 2000, height: 1028 }) | jpeg %}" alt="Happy couple admiring their newly painted house" width="1200" height="1028" loading="lazy" decoding="async" aria-hidden="true">
     </picture>
-    <!--White splash graphic-->
     <picture class="cs-graphic cs-light">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/splash-m.png">
-        <!--Tablet and above Image-->
-        <source media="(max-width: 1023px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/splash-t.png">
-        <!--Desktop and above Image-->
-        <source media="(min-width: 1024px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/splash.png">
-        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/splash.png" alt="graphic" width="1920" height="108" aria-hidden="true">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/splash-m.png" | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/splash-m.png" | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/splash-m.png" | jpeg %}" type="image/jpeg">
+       <!--Tablet Image-->
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/splash-t.png" | avif %}" type="image/avif">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/splash-t.png" | webp %}" type="image/webp">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/splash-t.png" | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/splash.png" | avif %}" type="image/avif">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/splash.png" | webp %}" type="image/webp">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/splash.png" | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/splash.png" | jpeg %}" alt="Paint stroke graphic" width="1200" height="694" loading="lazy" decoding="async" aria-hidden="true">
     </picture>
 </section>
                                 

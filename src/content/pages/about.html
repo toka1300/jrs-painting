@@ -17,6 +17,28 @@ eleventyNavigation:
 
 {% block body %}
 <!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1400">
+    <div class="cs-container">
+        <span class="cs-int-title">{{ title }}</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl bannerImage | resize({ width: 1200, height: 672, position: "top" }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl bannerImage | resize({ width: 1200, height: 672 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl bannerImage | resize({ width: 1200, height: 672 }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 601px)" srcset="{% getUrl bannerImage | resize({ width: 3000, height: 882 }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl bannerImage | resize({ width: 2000, height: 882 }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl bannerImage | resize({ width: 2000, height: 882 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl bannerImage | resize({ width: 2000, height: 882 }) | jpeg %}" alt="{{ bannerAlt }}" width="1200" height="946" loading="lazy" decoding="async" aria-hidden="true">
+    </picture>
+</div>
+                                
+<!-- ============================================ -->
 <!--                Side By Side                  -->
 <!-- ============================================ -->
 
@@ -30,7 +52,7 @@ eleventyNavigation:
        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 1920, height: 1170 }) | avif %}" type="image/avif">
        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 1920, height: 1170 }) | webp %}" type="image/webp">
        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 1920, height: 1170 }) | jpeg %}" type="image/jpeg">
-       <img src="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 1920, height: 1170 }) | jpeg %}" alt="Beautiful kitchen with nice paint work" width="1920" height="1170" loading="eager" decoding="async" aria-hidden="true">
+       <img src="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 1920, height: 1170 }) | jpeg %}" alt="Beautiful living room with nice paint work and flooring" width="1920" height="1170" loading="eager" decoding="async" aria-hidden="true">
     </picture>
 
     <div class="cs-container">
@@ -139,7 +161,7 @@ eleventyNavigation:
        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/happy-couple-interior.jpg" | resize({ width: 1400, height: 1480 }) | avif %}" type="image/avif">
        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/happy-couple-interior.jpg" | resize({ width: 1400, height: 1480 }) | webp %}" type="image/webp">
        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/happy-couple-interior.jpg" | resize({ width: 1400, height: 1480 }) | jpeg %}" type="image/jpeg">
-       <img src="{% getUrl "/assets/images/happy-couple-interior.jpg" | resize({ width: 1400 , height: 1480 }) | jpeg %}" alt="Brick wall" width="1200" height="1000" loading="lazy" decoding="async" aria-hidden="true">
+       <img src="{% getUrl "/assets/images/happy-couple-interior.jpg" | resize({ width: 1400 , height: 1480 }) | jpeg %}" alt="A happy couple moving into their new house" width="1200" height="1000" loading="lazy" decoding="async" aria-hidden="true">
     </picture>
     <div class="cs-container">
         <div class="cs-content">
@@ -167,7 +189,7 @@ eleventyNavigation:
        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/pembroke.jpeg" | resize({ width: 1623, height: 1190, position: "top" }) | avif %}" type="image/avif">
        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/pembroke.jpeg" | resize({ width: 1623, height: 1190, position: "top"  }) | webp %}" type="image/webp">
        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/pembroke.jpeg" | resize({ width: 1623, height: 1190, position: "top"  }) | jpeg %}" type="image/jpeg">
-       <img src="{% getUrl "/assets/images/pembroke.jpeg" | resize({ width: 1623 , height: 1190 }) | jpeg %}" alt="Brick wall" width="1200" height="1000" loading="lazy" decoding="async" aria-hidden="true">
+       <img src="{% getUrl "/assets/images/pembroke.jpeg" | resize({ width: 1623 , height: 1190 }) | jpeg %}" alt="Pembroke bridge and city hall" width="1200" height="1000" loading="lazy" decoding="async" aria-hidden="true">
 
     </picture>
     <div class="cs-container">
@@ -211,7 +233,7 @@ eleventyNavigation:
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/dining-room.jpg" | resize({ width: 610, height: 610 }) | avif %}" type="image/avif">
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/dining-room.jpg" | resize({ width: 610, height: 610 }) | webp %}" type="image/webp">
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/dining-room.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl "/assets/images/dining-room.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" alt="610" width="610" height="" loading="lazy" decoding="async" aria-hidden="true">
+                <img src="{% getUrl "/assets/images/dining-room.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" alt="Dining room" width="610" height="610" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
             </li>
             <!-- Image 2 -->
@@ -225,7 +247,7 @@ eleventyNavigation:
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kitchen.jpg" | resize({ width: 610, height: 610 }) | avif %}" type="image/avif">
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kitchen.jpg" | resize({ width: 610, height: 610 }) | webp %}" type="image/webp">
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kitchen.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl "/assets/images/kitchen.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" alt="610" width="610" height="" loading="lazy" decoding="async" aria-hidden="true">
+                <img src="{% getUrl "/assets/images/kitchen.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" alt="Remodeled kitchen" width="610" height="610" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
             </li>
             <!-- Image 3 -->
@@ -239,7 +261,7 @@ eleventyNavigation:
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/bedroom.jpg" | resize({ width: 610, height: 610 }) | avif %}" type="image/avif">
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/bedroom.jpg" | resize({ width: 610, height: 610 }) | webp %}" type="image/webp">
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/bedroom.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl "/assets/images/bedroom.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" alt="610" width="610" height="" loading="lazy" decoding="async" aria-hidden="true">
+                <img src="{% getUrl "/assets/images/bedroom.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" alt="Beautiful bedroom with freshly painted walls" width="610" height="610" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
             </li>
             <!-- Image 4 -->
@@ -253,7 +275,7 @@ eleventyNavigation:
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/cottage.png" | resize({ width: 610, height: 610 }) | avif %}" type="image/avif">
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/cottage.png" | resize({ width: 610, height: 610 }) | webp %}" type="image/webp">
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/cottage.png" | resize({ width: 610, height: 610 }) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl "/assets/images/cottage.png" | resize({ width: 610, height: 610 }) | jpeg %}" alt="610" width="610" height="" loading="lazy" decoding="async" aria-hidden="true">
+                <img src="{% getUrl "/assets/images/cottage.png" | resize({ width: 610, height: 610 }) | jpeg %}" alt="New flooring in kitchen" width="610" height="610" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
             </li>
             <!-- Image 5 -->
@@ -267,7 +289,7 @@ eleventyNavigation:
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/stairs.jpg" | resize({ width: 610, height: 610 }) | avif %}" type="image/avif">
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/stairs.jpg" | resize({ width: 610, height: 610 }) | webp %}" type="image/webp">
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/stairs.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl "/assets/images/stairs.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" alt="610" width="610" height="" loading="lazy" decoding="async" aria-hidden="true">
+                <img src="{% getUrl "/assets/images/stairs.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" alt="New flooring and paint around stairs" width="610" height="610" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
             </li>
             <!-- Image 6 -->
@@ -281,7 +303,7 @@ eleventyNavigation:
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/shiny-flooring.png" | resize({ width: 610, height: 610 }) | avif %}" type="image/avif">
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/shiny-flooring.png" | resize({ width: 610, height: 610 }) | webp %}" type="image/webp">
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/shiny-flooring.png" | resize({ width: 610, height: 610 }) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl "/assets/images/shiny-flooring.png" | resize({ width: 610, height: 610 }) | jpeg %}" alt="610" width="610" height="" loading="lazy" decoding="async" aria-hidden="true">
+                <img src="{% getUrl "/assets/images/shiny-flooring.png" | resize({ width: 610, height: 610 }) | jpeg %}" alt="Newly installed laminate flooring" width="610" height=610"" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
             </li>
             <!-- Image 8 -->
@@ -295,7 +317,7 @@ eleventyNavigation:
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hallway.png" | resize({ width: 610, height: 610 }) | avif %}" type="image/avif">
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hallway.png" | resize({ width: 610, height: 610 }) | webp %}" type="image/webp">
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hallway.png" | resize({ width: 610, height: 610 }) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl "/assets/images/hallway.png" | resize({ width: 610, height: 610 }) | jpeg %}" alt="610" width="610" height="" loading="lazy" decoding="async" aria-hidden="true">
+                <img src="{% getUrl "/assets/images/hallway.png" | resize({ width: 610, height: 610 }) | jpeg %}" alt="Hallway being painted" width="610" height="610" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
             </li>
             <!-- Image 8 -->
@@ -309,7 +331,7 @@ eleventyNavigation:
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 610, height: 610 }) | avif %}" type="image/avif">
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 610, height: 610 }) | webp %}" type="image/webp">
                 <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" alt="610" width="610" height="" loading="lazy" decoding="async" aria-hidden="true">
+                <img src="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 610, height: 610 }) | jpeg %}" alt="610" width="Living room" height="610" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
             </li>
             

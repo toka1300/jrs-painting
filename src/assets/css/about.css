@@ -528,6 +528,9 @@
     position: relative;
     display: block;
   }
+  #gallery-45 .cs-item:nth-of-type(5) picture {
+    transform: rotate(90deg);
+  }
   #gallery-45 .cs-item:hover .cs-hover-box {
     opacity: 1;
   }

@@ -17,14 +17,11 @@
         }
 
         .cs-content {
-            /* set text align to left if content needs to be left aligned */
             text-align: left;
             width: 100%;
             max-width: calc(522 / 16 * 1rem);
-            /* moved section padding to the .cs-content so we can have the cs-picture be full width on mobile without the padding preventing it from doing so */
             padding: var(--sectionPadding);
-            padding-top: 0;
-            /* prevents padding from affecting width and height */
+            padding-bottom: 0;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
@@ -89,6 +86,7 @@
             position: relative;
             width: 100%;
             height: calc(300 / 16 * 1rem);
+            order: 1;
 
             img {
                 position: absolute;
@@ -156,6 +154,8 @@
     #RTsbsr-601,
     #RTsbst-601 {
         position: relative;
+        display: flex;
+        flex-direction: column;
 
         .cs-container {
             width: 100%;
@@ -236,6 +236,7 @@
             width: 100%;
             height: calc(256 / 16 * 1rem);
             z-index: 1;
+            order: 1;
 
             img {
                 position: absolute;
@@ -279,7 +280,7 @@
             position: absolute;
             top: 0;
             bottom: 0;
-            right: 50%;
+            // left: 50%;
         }
         
         .cs-content {
@@ -302,6 +303,8 @@
 @media only screen and (min-width: 0rem) {
     #RTsbsr-601 {
         background-color: var(--primary);
+        display: flex;
+        flex-direction: column;
 
         .cs-topper,
         .cs-title,
@@ -328,12 +331,24 @@
 @media only screen and (min-width: 48rem) {
     #RTsbsr-601 {
         .cs-container {
+            justify-content: flex-end;
+        }
+
+        .cs-background {
+            right: 50%;
+            order: 0;
+        }
+    }
+}
+@media only screen and (min-width: 48rem) {
+    #RTsbst-601 {
+        .cs-container {
             justify-content: flex-start;
         }
 
         .cs-background {
-            left: 50%;
-            right: auto;
+            right: 0;
+            order: 0;
         }
     }
 }

@@ -397,7 +397,7 @@
     #banner-1400 {
         padding: var(--sectionPadding);
         padding-top: clamp(14.875rem, 25vw, 16.75rem);
-        padding-bottom: calc(100 / 16 * 1rem);
+        padding-bottom: 3.25rem;
         /* clips the line from causing overflow issues for going off screen */
         overflow: hidden;
         position: relative;

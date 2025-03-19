@@ -572,6 +572,11 @@
             position: relative;
             display: block;
 
+
+            &:nth-of-type(5) picture {
+                transform: rotate(90deg);
+            }
+
             &:hover {
                 .cs-hover-box {
                     opacity: 1;

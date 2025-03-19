@@ -48,9 +48,6 @@
 
         {% include "components/header.html" %}
         <main id="main">
-            {% if title != 'Home' %}
-                {% include 'components/banner.html' %}
-            {% endif %}
             {% block body %}{% endblock %}
         </main>
         {% include "components/footer.html" %}

@@ -259,7 +259,7 @@ html {
   }
   #cs-navigation .cs-top-container {
     width: 100%;
-    padding: 1rem 1rem 0;
+    padding: 1rem 1rem 1rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -269,10 +269,7 @@ html {
   }
   #cs-navigation .cs-top-contact {
     width: 100%;
-    padding-bottom: 1rem;
-    /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
-    border-bottom: 1px solid #e8e8e8;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -349,6 +346,17 @@ html {
     justify-content: flex-end;
     align-items: center;
     position: relative;
+  }
+  #cs-navigation .cs-container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    width: 85%;
+    height: 1px;
+    background-color: #e8e8e8;
   }
   #cs-navigation .cs-logo {
     width: auto;
@@ -1173,8 +1181,8 @@ html {
     list-style: none;
   }
   #cs-footer-711 .cs-social-link {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     background-color: transparent;
     border: 1px solid var(--bodyTextColor);
     border-radius: 50%;
@@ -1184,13 +1192,13 @@ html {
     transition: background-color 0.3s;
   }
   #cs-footer-711 .cs-social-link:hover {
-    background-color: var(--bodyTextColor);
+    background-color: var(--primary);
   }
   #cs-footer-711 .cs-social-link:hover .cs-social-icon {
     filter: grayscale(1) brightness(2000%);
   }
   #cs-footer-711 .cs-social-icon {
-    width: 0.75rem;
+    width: 1.25rem;
     height: auto;
     display: block;
   }
@@ -1228,6 +1236,26 @@ html {
   #cs-footer-711 .cs-copyright-link:hover {
     text-decoration: underline;
   }
+  #cs-footer-711 .credit {
+    margin: auto;
+    width: 96%;
+    font-size: 1rem;
+    line-height: 2.25rem;
+    text-align: center;
+  }
+  #cs-footer-711 .credit a {
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--primary);
+  }
+  #cs-footer-711 .credit a:hover {
+    text-decoration: underline;
+  }
+  #cs-footer-711 .credit .copyright {
+    display: block;
+    font-size: 1rem;
+  }
 }
 /* inbetween - 600px */
 @media only screen and (min-width: 37.5rem) {
@@ -1238,7 +1266,7 @@ html {
     width: auto;
   }
   #cs-footer-711 .cs-contact-ul {
-    width: 15rem;
+    width: 17rem;
   }
 }
 /* Tablet - 768px */
@@ -1252,6 +1280,9 @@ html {
   }
   #cs-footer-711 .cs-middle {
     max-width: 100%;
+  }
+  #cs-footer-711 .credit a {
+    display: unset;
   }
 }
 /* Small Desktop 1024px */

@@ -3,7 +3,7 @@ module.exports = {
     "email": "jrspaintingandrenos@gmail.com",
     "phoneForTel": "613-401-9196",
     "phoneFormatted": "(613) 401-9196",
-    "hours": "M-F: 8:00am - 9:00pm",
+    "hours": "M-F: 8:00am - 6:00pm",
     // "address": {
     //     "lineOne": "123 Fake Street",
     //     "city": "Ottawa",

@@ -70,17 +70,16 @@ eleventyNavigation:
                         <a class="cs-link" href="mailto:{{ client.email }}"><img class="cs-icon" src="../../assets/svgs/mail-fill.svg" alt="icon" loading="lazy" decoding="async" width="16" height="16" aria-hidden="true">{{ client.email }}</a>     
                     </p>
                 </li>
-                {# TODO add link to business profile #}
-                {# <li class="cs-item">
+                <li class="cs-item">
                     <span class="cs-header">Reviews</span>
                     <p class="cs-item-text">
                         See our reviews on Google or leave a review
-                        <a href="" class="cs-link">
+                        <a href="{{ client.socials.google }}" target="_blank" class="cs-link">
                             <img class="cs-icon" src="../../assets/svgs/brand-google.svg" alt="icon" loading="lazy" decoding="async" width="16" height="16" aria-hidden="true">
                             Google Reviews
                         </a>                   
                     </p>
-                </li> #}
+                </li>
             </ul>
             <picture class="cs-background">
                <!--Mobile Image-->
